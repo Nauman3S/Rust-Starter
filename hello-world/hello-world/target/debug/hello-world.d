@@ -1,0 +1,1 @@
+/mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-world/hello-world/target/debug/hello-world: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-world/hello-world/src/main.rs
