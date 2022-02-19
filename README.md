@@ -30,6 +30,7 @@
 - [Build tool and Package Manager <a name = "build"></a>](#build-tool-and-package-manager-)
 - [Development Environment <a name = "devenv"></a>](#development-environment-)
 - [First Project <a name = "firstproject"></a>](#first-project-)
+- [Projects <a name = "projects"></a>](#projects-)
 - [Usage <a name = "usage"></a>](#usage-)
 - [⛏️ Built Using <a name = "built_using"></a>](#️-built-using-)
 - [✍️ Authors <a name = "authors"></a>](#️-authors-)
@@ -108,8 +109,13 @@ You can now run the project using
 
 The above command will output `Hello, world!`
 
+## Projects <a name = "projects"></a>
+
+1.  Hello World(hello-world)
+2.  Dependencies(hello-deps)
 
 ## Usage <a name = "usage"></a>
+
 
 
 
