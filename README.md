@@ -111,9 +111,10 @@ The above command will output `Hello, world!`
 
 ## Projects <a name = "projects"></a>
 
-1.  Hello World(hello-world)
-2.  Dependencies(hello-deps)
-3.  Basic MQTT(hello-mqtt)
+1.  Hello World(hello-world) {Hello World Example}
+2.  Hello Basics(hello-basics) {Rust Basics - Functions, DataTypes...}
+3.  Dependencies(hello-deps) {Dependencies Usage Example}
+4.  Basic MQTT(hello-mqtt) {Networking - MQTT Basic Publisher Example}
 
 ## Usage <a name = "usage"></a>
 

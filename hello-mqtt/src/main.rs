@@ -15,14 +15,11 @@ use paho_mqtt as mqtt;
 use std::{env, process};
 
 const QOS: i32 = 1;
-fn printer(){
-    println!("printer");
-}
 
 fn main() {
     // Initialize the logger from the environment
-    printer();//test functions
     
+
     env_logger::init();
 
     let host = env::args()
