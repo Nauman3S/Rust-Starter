@@ -113,6 +113,7 @@ The above command will output `Hello, world!`
 
 1.  Hello World(hello-world)
 2.  Dependencies(hello-deps)
+3.  Basic MQTT(hello-mqtt)
 
 ## Usage <a name = "usage"></a>
 

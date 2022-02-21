@@ -1,0 +1,129 @@
+debug:Running the bundled build for Paho C
+cargo:rerun-if-changed=build.rs
+running: "cmake" "/home/nauman/.cargo/registry/src/github.com-1ecc6299db9ec823/paho-mqtt-sys-0.6.0/paho.mqtt.c/" "-DPAHO_BUILD_SHARED=off" "-DPAHO_BUILD_STATIC=on" "-DPAHO_ENABLE_TESTING=off" "-DPAHO_HIGH_PERFORMANCE=on" "-DPAHO_WITH_SSL=on" "-DOPENSSL_ROOT_DIR=/usr" "-DCMAKE_INSTALL_PREFIX=/mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+-- The C compiler identification is GNU 9.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake version: 3.16.3
+-- CMake system name: Linux
+-- Timestamp is 2022-02-21T04:54:05Z
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/build
+running: "cmake" "--build" "." "--target" "install" "--config" "Debug" "--"
+Scanning dependencies of target common_obj_static
+Scanning dependencies of target common_ssl_obj_static
+[  5%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTTime.c.o
+[  5%] Building C object src/CMakeFiles/common_obj_static.dir/Clients.c.o
+[  7%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTPacket.c.o
+[  9%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTProtocolClient.c.o
+[  9%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTTime.c.o
+[ 12%] Building C object src/CMakeFiles/common_obj_static.dir/utf-8.c.o
+[ 12%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolClient.c.o
+[ 14%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTPacketOut.c.o
+[ 16%] Building C object src/CMakeFiles/common_obj_static.dir/Messages.c.o
+[ 20%] Building C object src/CMakeFiles/common_obj_static.dir/Tree.c.o
+[ 22%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Clients.c.o
+[ 22%] Building C object src/CMakeFiles/common_obj_static.dir/Socket.c.o
+[ 24%] Building C object src/CMakeFiles/common_obj_static.dir/Log.c.o
+[ 25%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTPersistence.c.o
+[ 27%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/utf-8.c.o
+[ 29%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacket.c.o
+[ 31%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacketOut.c.o
+[ 33%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Messages.c.o
+[ 35%] Building C object src/CMakeFiles/common_obj_static.dir/Thread.c.o
+[ 37%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTProtocolOut.c.o
+[ 38%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTPersistenceDefault.c.o
+[ 42%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Tree.c.o
+[ 42%] Building C object src/CMakeFiles/common_obj_static.dir/SocketBuffer.c.o
+[ 44%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Socket.c.o
+[ 48%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Log.c.o
+[ 48%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistence.c.o
+[ 50%] Building C object src/CMakeFiles/common_obj_static.dir/LinkedList.c.o
+[ 51%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTProperties.c.o
+[ 53%] Building C object src/CMakeFiles/common_obj_static.dir/MQTTReasonCodes.c.o
+[ 55%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Thread.c.o
+[ 57%] Building C object src/CMakeFiles/common_obj_static.dir/Base64.c.o
+[ 59%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolOut.c.o
+[ 61%] Building C object src/CMakeFiles/common_obj_static.dir/SHA1.c.o
+[ 64%] Building C object src/CMakeFiles/common_obj_static.dir/WebSocket.c.o
+[ 64%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistenceDefault.c.o
+[ 68%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/SocketBuffer.c.o
+[ 68%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/LinkedList.c.o
+[ 70%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTProperties.c.o
+[ 72%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/MQTTReasonCodes.c.o
+[ 74%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/Base64.c.o
+[ 75%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/SHA1.c.o
+[ 77%] Building C object src/CMakeFiles/common_ssl_obj_static.dir/WebSocket.c.o
+[ 77%] Built target common_obj_static
+Scanning dependencies of target paho-mqtt3c-static
+Scanning dependencies of target paho-mqtt3a-static
+[ 77%] Built target common_ssl_obj_static
+[ 81%] Building C object src/CMakeFiles/paho-mqtt3c-static.dir/MQTTClient.c.o
+[ 83%] Building C object src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsyncUtils.c.o
+[ 83%] Building C object src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsync.c.o
+Scanning dependencies of target paho-mqtt3cs-static
+Scanning dependencies of target paho-mqtt3as-static
+[ 87%] Building C object src/CMakeFiles/paho-mqtt3cs-static.dir/MQTTClient.c.o
+[ 87%] Building C object src/CMakeFiles/paho-mqtt3cs-static.dir/SSLSocket.c.o
+[ 90%] Building C object src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsync.c.o
+[ 90%] Building C object src/CMakeFiles/paho-mqtt3as-static.dir/SSLSocket.c.o
+[ 94%] Building C object src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsyncUtils.c.o
+[ 94%] Linking C static library libpaho-mqtt3c.a
+[ 96%] Linking C static library libpaho-mqtt3a.a
+[ 98%] Linking C static library libpaho-mqtt3cs.a
+[100%] Linking C static library libpaho-mqtt3as.a
+[100%] Built target paho-mqtt3c-static
+[100%] Built target paho-mqtt3a-static
+[100%] Built target paho-mqtt3cs-static
+[100%] Built target paho-mqtt3as-static
+Install the project...
+-- Install configuration: "Debug"
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish_time.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTAsync_subscribe.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish_async.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/MQTTClient_subscribe.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/paho_c_pub.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/paho_c_sub.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/paho_cs_pub.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/paho_cs_sub.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/samples/pubsub_opts.c
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/CONTRIBUTING.md
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/epl-v20
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/edl-v10
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/README.md
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/share/doc/Eclipse Paho C/notice.html
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/libpaho-mqtt3c.a
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/libpaho-mqtt3a.a
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTAsync.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTClient.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTClientPersistence.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTProperties.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTReasonCodes.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTSubscribeOpts.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include/MQTTExportDeclarations.h
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/libpaho-mqtt3cs.a
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/libpaho-mqtt3as.a
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig.cmake
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig-debug.cmake
+-- Installing: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfigVersion.cmake
+cargo:root=/mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out
+debug:CMake output dir: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out
+debug:link Using SSL library
+debug:Using Paho C library at: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib [paho-mqtt3as]
+debug:Using Paho C headers at: /mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/include
+debug:Using existing Paho C binding for target: x86_64-unknown-linux-gnu
+debug:Target Pointer Width: 64
+debug:Using bindings from: bindings/bindings_paho_mqtt_c_1.3.9-x86_64-unknown-linux-gnu.rs
+cargo:rustc-link-search=/usr/lib
+cargo:rustc-link-lib=ssl
+cargo:rustc-link-lib=crypto
+cargo:rustc-link-search=native=/mnt/c/Users/nauma/Documents/KopernikusaAuto/Rust-Starter/hello-mqtt/target/debug/build/paho-mqtt-sys-141bf9f2a5f12ee2/out/lib
+cargo:rustc-link-lib=static=paho-mqtt3as
