@@ -114,7 +114,7 @@ The above command will output `Hello, world!`
 1.  Hello World(hello-world) {Hello World Example}
 2.  Hello Basics(hello-basics) {Rust Basics - Functions, DataTypes...}
 3.  Dependencies(hello-deps) {Dependencies Usage Example}
-4.  Basic MQTT(hello-mqtt) {Networking - MQTT Basic Publisher Example}
+4.  [Basic MQTT(hello-mqtt)](https://github.com/Nauman3S/Rust-Starter/tree/main/hello-mqtt) {Networking - MQTT Basic Publisher Example}
 
 ## Usage <a name = "usage"></a>
 
