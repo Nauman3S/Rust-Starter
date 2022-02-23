@@ -9,6 +9,10 @@ fn main() {
     println!("int u32 {}", n);
     println!("float 32 {}", float_y);
 
+    if n == 2 {
+        println!("n is 2");
+    }
+
     let tup: (i32, f32, i32) = (200, 2.2, 3); //tuple
     println!("tuple + float {}", tup.1 + float_y);
 
@@ -22,15 +26,45 @@ fn main() {
     let array_prefilled = [5; 10];
 
     println!("array prefilled {}", array_prefilled[1]);
+    for element in array_prefilled {
+        println!("array_prefilled element {}", element);
+    }
 
     let array_predefined: [i32; 5] = [1, 2, 3, 4, 5];
     println!("array predefined {}", array_predefined[3]);
 
-    // stackOverFlow(1);//will overflow the stack by calling iteself recuresively
+    // _stack_over_flow(1);//will overflow the stack by calling iteself recuresively
+
+    //new scope is created with curly brackets
+    let y = {
+        //simple block with return
+        let x = 3;
+        x + 1
+    };
+
+    //simple expression
+    println!("The value of y is: {} {}", y, {
+        let x = 22;
+        x
+    });
+
+    loop {
+        println!("hi there ! I'm a loop");
+        if n == 5 {
+            break;
+        }
+        n = n + 1;
+    }
+
+    for number in (1..4).rev() {
+        //reverse loop
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
 }
-fn stackOverFlow(x: u32) -> u32 {
+fn _stack_over_flow(x: u32) -> u32 {
     println!("{}", x);
-    stackOverFlow(x + 1)
+    _stack_over_flow(x + 1)
 }
 fn printer(x: i32) -> i32 {
     println!("printer");

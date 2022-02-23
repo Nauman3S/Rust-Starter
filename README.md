@@ -115,6 +115,7 @@ The above command will output `Hello, world!`
 2.  [Hello Basics(hello-basics)](https://github.com/Nauman3S/Rust-Starter/tree/main/hello-basics) {Rust Basics - Functions, DataTypes...}
 3.  [Dependencies(hello-deps)](https://github.com/Nauman3S/Rust-Starter/tree/main/hello-deps) {Dependencies Usage Example}
 4.  [Basic MQTT(hello-mqtt)](https://github.com/Nauman3S/Rust-Starter/tree/main/hello-mqtt) {Networking - MQTT Basic Publisher Example}
+5.  [Ownership Basics(ownership-basics)](https://github.com/Nauman3S/Rust-Starter/tree/main/ownership-basics) {Ownership Concepts}
 
 ## Usage <a name = "usage"></a>
 
