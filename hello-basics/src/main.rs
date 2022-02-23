@@ -15,11 +15,23 @@ fn main() {
     let (_x, y, _z) = tup;
     println!("tuple + float {}", y + float_y);
 
-    let array=[1,2,98];
+    let array = [1, 2, 98];
 
-    println!("array {}",array[2])
+    println!("array {}", array[2]);
+
+    let array_prefilled = [5; 10];
+
+    println!("array prefilled {}", array_prefilled[1]);
+
+    let array_predefined: [i32; 5] = [1, 2, 3, 4, 5];
+    println!("array predefined {}", array_predefined[3]);
+
+    // stackOverFlow(1);//will overflow the stack by calling iteself recuresively
 }
-
+fn stackOverFlow(x: u32) -> u32 {
+    println!("{}", x);
+    stackOverFlow(x + 1)
+}
 fn printer(x: i32) -> i32 {
     println!("printer");
     let sp = "9988";
