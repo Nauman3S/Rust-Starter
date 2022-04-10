@@ -28,7 +28,7 @@ macro_rules! print_expression {
 }
 
 macro_rules! add_it {
-    (plz $l:expr; addInto $r:expr; then;show_res) => {
+    (plz $l:expr; addInto $r:expr; then;show_res;~) => {
         println!("adding l and r {:?}  =  {:?}", stringify!($l + $r), $l + $r)
     };
 }
@@ -50,5 +50,6 @@ fn main() {
     add_it!(    plz 3;
                 addInto 2;
                 then;
-                show_res);
+                show_res;
+                    ~);
 }
