@@ -27,6 +27,12 @@ macro_rules! print_expression {
     };
 }
 
+macro_rules! add_it {
+    (plz $l:expr; addInto $r:expr; then;show_res) => {
+        println!("adding l and r {:?}  =  {:?}", stringify!($l + $r), $l + $r)
+    };
+}
+
 fn main() {
     a_macro!();
     x_and_y!(x=>19);
@@ -40,4 +46,9 @@ fn main() {
         y += 1;
         x + y
     });
+
+    add_it!(    plz 3;
+                addInto 2;
+                then;
+                show_res);
 }
