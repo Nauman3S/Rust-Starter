@@ -1,1 +1,0 @@
-/home/ubuntu/Kopernikus/Rust-Starter/hello_proc_macro_lib/hello_proc_macro_lib_derive/target/debug/libhello_proc_macro_lib_derive.so: /home/ubuntu/Kopernikus/Rust-Starter/hello_proc_macro_lib/hello_proc_macro_lib_derive/src/lib.rs
