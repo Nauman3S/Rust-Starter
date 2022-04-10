@@ -16,4 +16,6 @@ fn main() {
         height:32,
     };
     println!("area of an implemented rect is {}",rect1.area());
+
+    
 }

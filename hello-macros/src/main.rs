@@ -34,6 +34,12 @@ macro_rules! add_it {
 }
 
 fn main() {
+
+
+    let v1: Vec<u32>=vec!{1,2,87};//for macros bracket types don't matter
+    println!("v1[3] = {}",v1[2]);
+
+
     a_macro!();
     x_and_y!(x=>19);
     x_and_y!(y=>29+2);
